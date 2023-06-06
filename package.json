@@ -1,0 +1,21 @@
+{
+  "name": "jenkins-playright",
+  "version": "1.0.0",
+  "description": "Automação de testes integrando jenkis e blilioteca de teste end2end",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matheusdouglas/jenkins-playright.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matheusdouglas/jenkins-playright/issues"
+  },
+  "homepage": "https://github.com/matheusdouglas/jenkins-playright#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.34.3"
+  }
+}
