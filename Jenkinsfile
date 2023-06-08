@@ -24,12 +24,6 @@ pipeline {
           npx playwright.cmd test
         '''
       }
-      post {
-        success {
-          archiveArtifacts artifacts: 'homepage-*.png', followSymlinks: false
-          bat 'del homepage-*.png'
-        }
-      }
     }
   }
 }
