@@ -4,30 +4,30 @@ pipeline {
   stages {
     stage('Install Playwright') {
       steps {
-        sh '''
+        bat '''
           npm install -D @playwright/test
-          npx playwright install
+          npx playwright.cmd install
         '''
       }
     }
 
     stage('Help') {
       steps {
-        sh 'npx playwright test --help'
+        bat 'npx playwright.cmd test --help'
       }
     }
 
     stage('Test') {
       steps {
-        sh '''
-          npx playwright test --list
-          npx playwright test
+        bat '''
+          npx playwright.cmd test --list
+          npx playwright.cmd test
         '''
       }
       post {
         success {
           archiveArtifacts artifacts: 'homepage-*.png', followSymlinks: false
-          sh 'rm -rf *.png'
+          bat 'del homepage-*.png'
         }
       }
     }
