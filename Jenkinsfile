@@ -1,6 +1,5 @@
 pipeline {
   agent any
-  
   }
   stages {
     stage('install playwright') {
@@ -31,4 +30,3 @@ pipeline {
       }
     }
   }
-}
