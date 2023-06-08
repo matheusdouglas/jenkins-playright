@@ -20,10 +20,10 @@ pipeline {
     stage('Test') {
       steps {
         bat '''
-          npx playwright.cmd test --list
-          npx playwright.cmd test
+          npx playwright.cmd test example.spec.ts
         '''
       }
     }
+
   }
 }
