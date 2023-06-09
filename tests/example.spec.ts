@@ -11,7 +11,7 @@ test('Cadastrar usuario', async ({ page }) => {
 
   await loginPage.goto();
   await loginPage.linkCadastro();
-  await cadastrarPage.fazerCadastro('samuel', 'samuel@gmail.com', 'admin')
+  await cadastrarPage.fazerCadastro('matheus12', 'matheus@gmail.com', 'admin')
   await cadastrarPage.verificaToast('Conta criada com sucesso')
 
 
